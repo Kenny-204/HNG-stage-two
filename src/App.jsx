@@ -103,12 +103,28 @@ function App() {
       <section>
         <div className="happy-hour flex">
           <p className="happy-hour-bold">Happy Hour</p>
-          <img src="iphone.png" width="500px" height="400px" style={{position:"absolute",bottom:"0"}} />
+          <img
+            src="iphone.png"
+            width="500px"
+            height="300px"
+            style={{ position: "absolute", bottom: "0", left: "25%" }}
+          />
           <div className="happy-hour-right">
             <p className="discount">30% OFF</p>
-            <p className="happy-hour-bold">Get all iphones at affordable prices</p>
-            <Button Label="Shop now" />
+            <p className="happy-hour-bold">
+              Get all iphones at affordable prices
+            </p>
+            <Button Label="Shop now" bgColor="#BCBCFF" />
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="new-google flex">
+          <div className="new-google-left">
+            <p>See the world with new eyes get the new vr googles headset</p>
+            <Button Label="Buy now" bgColor="#FFE8BF" color="white" />
+          </div>
+          <img src="VRheadset.png" width="150px" height="100px"/>
         </div>
       </section>
       <Footer />

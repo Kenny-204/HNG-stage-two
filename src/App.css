@@ -404,6 +404,7 @@ padding: 3% 0;
   justify-content: space-between;
   background-color: #FFE8BF;
   position:relative;
+  padding: 2%;
 }
 .happy-hour-bold{
   font-family: "Inter";
@@ -411,4 +412,20 @@ padding: 3% 0;
   font-size: 40px;
   width: 400px;
 }
+/* section end */
+/* section start */
+.new-google{
+  background-color: #BCBCFF;
+  padding: 2%;
+  color: white;
+  justify-content: space-between;
+}
+.new-google-left{
+  width: 400px;
+}
+.new-google-left p{
+  font-family: "Inter";
+  font-size: 25px;
+  font-weight: 800;
+ }
 /* section end */
