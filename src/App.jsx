@@ -3,6 +3,8 @@
 import Button from "./components/Button.jsx";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
+// import Product from "./pages/Product.jsx"
+// import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 import "./App.css";
 
@@ -79,13 +81,8 @@ function App() {
         </div>
       </section>
       <section>
-        <ul
-          style={{
-            listStyle: "none",
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap:"wrap"
-          }}
+        <ul className="rectangle-container"
+         
         >
           <li>
             <Rectangle />

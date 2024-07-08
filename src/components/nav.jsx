@@ -13,16 +13,7 @@ function Nav() {
         })}
         <Button Label = "Learn More"/>
       </ul>
-      <div className="toggle_Btn">
-                <i className=" fa-solid fa-bars"></i>
-            </div>
-
-            <div className="dropdown--menu ">
-            {Navlinks.map((link, i) => {
-          return <NavLink className="dropdown-item" title={link} key={i} />;
-        })}
-                <button className="dropdown--item">Sign Up</button>
-            </div>
+     
     </>
   );
 }
