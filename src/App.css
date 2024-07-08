@@ -202,7 +202,6 @@ header {
   }
 
   .hero .illus {
-    border: 1px black solid;
     width: 350px;
     height: 400px;
   }
@@ -314,8 +313,8 @@ header {
 }
 
 .shop-cap {
-  padding: 20px 0px 0px 20px;
-  width: 40%;
+  padding: 20px 0px 100px 20px;
+  width: 50%;
 }
 
 .shop-cap button {
@@ -399,7 +398,12 @@ header {
   width: 650px;
 padding: 3% 0;
 }
-
+@media all and (max-width:875px) {
+.discount-text{
+  font-size: 12px;
+  width: 50%;
+}
+}
 /* Section End */
 /* Section start */
 .happy-hour{
@@ -412,7 +416,15 @@ padding: 3% 0;
   font-family: "Inter";
   font-weight: 900;
   font-size: 40px;
-  width: 400px;
+  width: 300px;
+}
+@media all and (max-width:1116px) {
+  .happy-hour-bold{
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 20px;
+    /* width: 400px; */
+}
 }
 /* section end */
 /* section start */

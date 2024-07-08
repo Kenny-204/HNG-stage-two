@@ -73,8 +73,8 @@ function App() {
           <img
             src="onegirllikethis.png"
             style={{ position: "absolute", right: "0", bottom: "0" }}
-            width="500px"
-            height="350px"
+            width="30%"
+            height="150%"
           />
         </div>
       </section>
@@ -106,8 +106,8 @@ function App() {
           <p className="happy-hour-bold">Happy Hour</p>
           <img
             src="iphone.png"
-            width="500px"
-            height="300px"
+            width="30%"
+            height="150%"
             style={{ position: "absolute", bottom: "0", left: "25%" }}
           />
           <div className="happy-hour-right">
@@ -134,7 +134,7 @@ function App() {
 }
 
 function Rectangle({ bgColor = "#FFA50040" }) {
-  return <div className="rectangle" style={{ backgroundColor: bgColor }}></div>;
+  return <div className="rectangle" style={{ backgroundColor: bgColor,marginTop:"5%" }}></div>;
 }
 
 function ShopItem({ ItemName, price, bgColor }) {
@@ -168,7 +168,7 @@ function ShopCard({
         </p>
         <Button Label="Browse" bgColor={btnColor} color="black" />
       </div>
-      <img src="VRguy.png" alt="" width="300px" height="200px" />
+      <img src="VRguy.png" alt="" width="300px" height="200px" style={{position:"absolute",bottom:"0",right:"0"}} />
     </div>
   );
 }
