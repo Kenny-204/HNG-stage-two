@@ -100,7 +100,7 @@ function App() {
       </section>
       <section>
         <div className="happy-hour flex">
-          <p className="happy-hour-bold">Happy Hour</p>
+          <p className="happy-hour-bold s" >Happy Hour</p>
           <img
             src="iphone.png"
             width="30%"
