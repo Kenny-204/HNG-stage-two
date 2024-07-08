@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import Button from "./Button";
+
 function Nav() {
   const Navlinks = ["Shop", "About Us", "Distributors", "Contact Us"];
   return (
     <>
+    
       <p className="logo">Timbu</p>
       <ul className="">
         {Navlinks.map((link, i) => {
