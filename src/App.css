@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  overflow-x: none;
+
+}
+
+:root {
+  --blue: #1F1FFF;
+
+}
+
+/* General Styles */
+.flex {
+  display: flex;
+}
+
+section {
+  padding: 2%;
+}
+
+/*  */
+/* Navbar */
+.logo {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "Jacques Francois", serif;
+
+  color: var(--blue);
+}
+
+li,
+a,
+.nav--button {
+  font-size: 10px;
+  font-family: "Inter";
+  font-weight: 550;
+  text-decoration: none;
+
+}
+
+.debug {
+  border: 1px black solid;
+}
+
+header {
+  position: "relative";
+  z-Index: "1";
+}
+
+.nav {
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4%;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0 20px;
+
+}
+
+.nav li a,
+.nav li a:active {
+  color: var(--blue);
+  transition: all 0.3s ease 0s;
+}
+
+
+.nav li a:hover {
+  color: blue
+}
+
+.nav--button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* dropdown start */
+.dropdown--menu {
+  display: none;
+  height: 0;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background: #f4f7fe;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 550;
+  box-shadow: 1px 1px 13px #d7e3ff;
+  list-style: none;
+  padding: 10px 20px;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown--item {
+  margin: 5px;
+}
+
+.dropdown--menu a,
+.dropdown--menu a li {
+  padding: 7px;
+  color: var(--gray);
+}
+
+.dropdown--menu.open {
+  height: 250px;
+  display: block;
+}
+
+.dropdown--menu button {
+  background-color: #FA8443;
+  font-family: lato;
+  color: #f7f7f7ff;
+  width: 120px;
+  height: 46px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+}
+
+/* dropdown end */
+/* media queries for dropdown */
+@media all and (max-width:780px) {
+
+
+  nav ul,
+  nav button {
+    display: none;
+  }
+}
+
+@media all and (min-width:780px) {
+  .toggle_Btn {
+    display: none;
+  }
+}
+
+/* Navbar end */
+/* hero  */
+.hero {
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.hero .text-left {
+  padding: 90px 0px;
+  width: 50%;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.title {
+  width: 400px;
+  font-size: 38px;
+  font-family: "Inter";
+  line-height: 124.5%;
+}
+
+.quote {
+  margin-top: 30px;
+  width: 380px;
+  font-size: 10px;
+  line-height: 15px;
+
+}
+
+/* media queries */
+@media all and (max-width:1200px) {
+  .hero .text-left {
+    padding: 70px 0px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 150%;
+    font-family: "Inter";
+    line-height: 124.5%;
+  }
+
+  .quote {
+
+    width: 400px;
+    font-size: 70%;
+    line-height: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  .hero .illus {
+    border: 1px black solid;
+    width: 350px;
+    height: 400px;
+  }
+}
+
+@media all and (max-width:712px) {
+  .svg {
+    width: 50%;
+    height: 500px;
+  }
+
+  .hero .text-left {
+    padding: 30px 0px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 90%;
+    font-family: "Inter";
+    line-height: 124.5%;
+  }
+
+  .quote {
+    font-size: 50%;
+    line-height: 10px;
+    letter-spacing: 0.32px;
+  }
+
+  .hero .illus {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+
+@media all and (max-width:500px) {
+
+  .hero {
+    padding: 15px;
+  }
+
+  .hero .text-left {
+    padding: 0px 0px;
+    text-align: center;
+  }
+
+
+  .hero .illus {
+    display: none;
+  }
+
+}
+
+
+
+
+/* hero end */
+/* header end */
+/* Section Start */
+
+.description {
+  font-family: "Inter";
+  display: grid;
+  place-items: center;
+}
+
+.description-title {
+  text-align: center;
+  width: 250px;
+  font-size: 16px;
+
+  font-weight: 900;
+}
+
+.description-text {
+  width: 250px;
+  font-weight: 400;
+  font-size: 10px;
+
+}
+
+/* Section end */
+
+/* section start */
+.shop {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 900;
+  color: #BCBCFF;
+
+  margin-top: 1%;
+  line-height: 58.09px;
+  text-align: left;
+
+}
+
+.shop-card-container {
+  justify-content: space-between;
+}
+
+.shop-card {
+  width: 45%;
+  margin-top: 2%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.shop-cap {
+  padding: 20px 0px 0px 20px;
+  width: 40%;
+}
+
+.shop-cap button {
+  position: absolute;
+  bottom: 10px;
+}
+
+.shop-card-text {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+
+.shop-items {
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.shop-item {
+  flex-direction: column;
+  width: 250px;
+  height: 270px;
+  padding: 3% 0.1%;
+}
+
+.shop-item-text {
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+
+}
+
+.rectangle {
+  /* background-color: #FFA50040; */
+  width: 250px;
+  height: 180px;
+}
+
+/* section end */
+/* Section Start */
+.best-seller-title {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.best-seller-cap {
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.headphone {
+  background-color: blue;
+  padding: 1%;
+  position:relative;
+  color: white;
+}
+
+.discount {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+}
+.discount-left button{
+  font-family: "Inter";
+  /* font-size: 24px; */
+  font-weight: 900;
+  /* line-height: 29.05px; */
+  /* text-align: left; */
+  
+}
+.discount-text {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 900;
+  width: 650px;
+padding: 3% 0;
+}
+
+/* Section End */
+/* Section start */
+.happy-hour{
+  justify-content: space-between;
+  background-color: #FFE8BF;
+  position:relative;
+}
+.happy-hour-bold{
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 40px;
+  width: 400px;
+}
+/* section end */
