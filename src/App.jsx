@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 // import { useState } from 'react'
-import Button from "./Button.jsx";
-import Header from "./header.jsx";
-import Footer from "./footer.jsx";
+import Button from "./components/Button.jsx";
+import Header from "./components/header.jsx";
+import Footer from "./components/footer.jsx";
 
 import "./App.css";
 
