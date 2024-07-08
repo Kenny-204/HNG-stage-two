@@ -84,6 +84,7 @@ function App() {
             listStyle: "none",
             display: "flex",
             justifyContent: "space-between",
+            flexWrap:"wrap"
           }}
         >
           <li>

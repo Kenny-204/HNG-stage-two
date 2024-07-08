@@ -303,6 +303,7 @@ header {
 
 .shop-card-container {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .shop-card {
@@ -333,6 +334,7 @@ header {
 .shop-items {
   justify-content: space-between;
   margin-top: 2%;
+  flex-wrap: wrap;
 }
 
 .shop-item {
