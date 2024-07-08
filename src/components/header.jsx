@@ -2,7 +2,7 @@ import Nav from "../components/nav.jsx";
 function Header() {
   return (
     <>
-      <nav className="nav flex ">
+      <nav className="nav flex">
         <Nav />
       </nav>
       <div className="flex hero">

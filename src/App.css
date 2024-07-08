@@ -7,7 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-
+/* border: 1px black solid; */
   overflow-x: none;
 
 }
@@ -166,21 +166,6 @@ header {
     place-content: center;
   }
 
-  /*
-
-  .title {
-    font-size: 90%;
-    font-family: "Inter";
-    line-height: 124.5%;
-  }
-
-  .quote {
-    font-size: 50%;
-    line-height: 10px;
-    letter-spacing: 0.32px;
-  }
-
-  */
   .hero .illus {
     width: 400px;
     height: 400px;
@@ -206,10 +191,40 @@ header {
     height: 300px;
   }
 
+  
+.nav {
+  list-style: none;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px ;
+  position: relative;
 }
+.nav ul {
+/* width: 50%; */
+position: absolute;
+right: 5px;
+}
+.hero .text-left {
+  display: flex;
+ flex-direction: column;
+}
+}
+@media all and (max-width:430px) {
+  .title {
+    font-size: 150%;
+    font-family: "Inter";
+    line-height: 124.5%;
+    width: 100%;
+  }
 
+  .quote {
 
-
+    width: 100%;
+    font-size: 70%;
+    line-height: 16px;
+    letter-spacing: 0.32px;
+  }
+}
 
 /* hero end */
 /* header end */
