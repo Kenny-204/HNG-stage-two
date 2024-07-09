@@ -8,7 +8,10 @@ function Header() {
       <div className="flex hero">
         <div className="text-left">
           <p className="title">
-            <b>Shop for your original items for techies here at <span style={{color:"#1F1FFF"}}>timbu</span></b>
+            <b>
+              Shop for your original items for techies here at{" "}
+              <span style={{ color: "#1F1FFF" }}>timbu</span>
+            </b>
           </p>
           <p className="quote">
             Timbu is an online store where you can purchase tech products at

@@ -81,9 +81,7 @@ function App() {
         </div>
       </section>
       <section>
-        <ul className="rectangle-container"
-         
-        >
+        <ul className="rectangle-container">
           <li>
             <Rectangle />
           </li>
@@ -100,7 +98,7 @@ function App() {
       </section>
       <section>
         <div className="happy-hour flex">
-          <p className="happy-hour-bold s" >Happy Hour</p>
+          <p className="happy-hour-bold sly">Happy Hour</p>
           <img
             src="iphone.png"
             width="30%"
@@ -122,7 +120,12 @@ function App() {
             <p>See the world with new eyes get the new vr googles headset</p>
             <Button Label="Buy now" bgColor="#FFE8BF" color="white" />
           </div>
-          <img src="VRheadset.png" width="150px" height="100px"/>
+          <img
+            src="VRheadset.png"
+            className="sly"
+            width="150px"
+            height="100px"
+          />
         </div>
       </section>
       <Footer />
@@ -131,7 +134,12 @@ function App() {
 }
 
 function Rectangle({ bgColor = "#FFA50040" }) {
-  return <div className="rectangle" style={{ backgroundColor: bgColor,marginTop:"5%" }}></div>;
+  return (
+    <div
+      className="rectangle"
+      style={{ backgroundColor: bgColor, marginTop: "5%" }}
+    ></div>
+  );
 }
 
 function ShopItem({ ItemName, price, bgColor }) {
@@ -165,7 +173,13 @@ function ShopCard({
         </p>
         <Button Label="Browse" bgColor={btnColor} color="black" />
       </div>
-      <img src="VRguy.png" alt="" width="300px" height="200px" style={{position:"absolute",bottom:"0",right:"0"}} />
+      <img
+        src="VRguy.png"
+        alt=""
+        width="300px"
+        height="200px"
+        style={{ position: "absolute", bottom: "0", right: "0" }}
+      />
     </div>
   );
 }

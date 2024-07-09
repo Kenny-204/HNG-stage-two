@@ -5,15 +5,13 @@ function Nav() {
   const Navlinks = ["Shop", "About Us", "Distributors", "Contact Us"];
   return (
     <>
-    
       <p className="logo">Timbu</p>
       <ul className="">
         {Navlinks.map((link, i) => {
           return <NavLink title={link} key={i} />;
         })}
-        <Button Label = "Learn More"/>
+        <Button Label="Learn More" />
       </ul>
-     
     </>
   );
 }
